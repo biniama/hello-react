@@ -7,7 +7,7 @@ const App: FC = () => {
   const [clickState, setClickState] = useState<boolean>(false);
 
   function handleClick(): any {
-    setClickState(true);
+    setClickState(!clickState);
   }
 
   return (
