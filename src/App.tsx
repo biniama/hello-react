@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, FC, useState } from "react";
+import Title from "./Title";
+import Subtitle from "./Subtitle";
+import Button from "./Button";
 
-const App: React.FC = () => {
+const App: FC = () => {
+  const [clickState, setClickState] = useState<boolean>(false);
+
+  function handleClick(): any {
+    setClickState(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header>
+        <Title />
+        <Subtitle text="Here is a subtitle" />
       </header>
-    </div>
+      <p>The button is{!clickState && " not"} clickified!</p>
+      <Button handleClick={handleClick} />
+    </Fragment>
   );
-}
+};
 
 export default App;

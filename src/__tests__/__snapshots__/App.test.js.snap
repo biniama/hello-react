@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component matches App snapshot 1`] = `
+Array [
+  <header>
+    <h1>
+      Welcome to React!!!
+    </h1>
+    <h2>
+      HERE IS A SUBTITLE
+    </h2>
+  </header>,
+  <p>
+    The button is
+     not
+     clickified!
+  </p>,
+  <button
+    onClick={[Function]}
+  >
+    Click me!!!
+  </button>,
+]
+`;
+
+exports[`App component matches App snapshot when button is clicked 1`] = `
+Array [
+  <header>
+    <h1>
+      Welcome to React!!!
+    </h1>
+    <h2>
+      HERE IS A SUBTITLE
+    </h2>
+  </header>,
+  <p>
+    The button is
+     not
+     clickified!
+  </p>,
+  <button
+    onClick={[Function]}
+  >
+    Click me!!!
+  </button>,
+]
+`;
+
+exports[`App component matches App snapshot when button is clicked twice 1`] = `
+Array [
+  <header>
+    <h1>
+      Welcome to React!!!
+    </h1>
+    <h2>
+      HERE IS A SUBTITLE
+    </h2>
+  </header>,
+  <p>
+    The button is
+     not
+     clickified!
+  </p>,
+  <button
+    onClick={[Function]}
+  >
+    Click me!!!
+  </button>,
+]
+`;
